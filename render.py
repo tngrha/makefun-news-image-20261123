@@ -351,11 +351,13 @@ BRIEFS = [
         "St. Johns River at record 5.67 m in Cocoa",
         "Kilauea eruption episode 57 continues",
     ]),
-    ("SOUTH AMERICA · AFRICA", [
+    ("SOUTH AMERICA", [
         "Brazil lower house votes on fiscal bill",
         "Peru IFS profit flat at $134m; $54m El Niño reserve",
         "Drones reportedly hit Cúcuta police command",
         "Mexico keeps arresting CJNG commanders",
+    ]),
+    ("AFRICA", [
         "Zambia commissions $3m Chikuni solar plant",
         "Six murdered by militants in Nangade",
     ]),
@@ -513,7 +515,7 @@ d.text((bx, my), "ALSO ON MONDAY 23 NOVEMBER", font=F(SANS_B, 11), fill=INK)
 col_w = (W - bx - 12 - 10) // 2
 asia_items = BRIEFS[2][1]
 left_groups = [BRIEFS[0], BRIEFS[1], ("ASIA", asia_items[:5])]
-right_groups = [("ASIA (CONT.)", asia_items[5:]), BRIEFS[3], BRIEFS[4]]
+right_groups = [("ASIA (CONT.)", asia_items[5:]), BRIEFS[3], BRIEFS[4], BRIEFS[5]]
 cols = [(bx, left_groups), (bx + col_w + 10, right_groups)]
 num = 17
 bf = F(NOTO, 9.5)
